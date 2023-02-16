@@ -1,0 +1,37 @@
+header {
+    background-color:nth($colores, 2 );
+    padding: 30px;
+
+    h1 {
+        color: nth($colores, 3 );
+        text-align: center;
+        margin: 15px;
+        font-family: $fuente;
+        font-weight: 400;
+        font-size: 40px;
+        font-style: $estilo;
+    }
+
+    nav {
+        div {
+            a {
+                font-family: $fuente;
+                font-size: 15px;
+                font-style: $estilo;
+                font-weight: 500;
+                color: nth($colores , 1 );
+            }
+            div {
+                div {
+                    a {
+                        font-family: 'Newsreader', serif;
+                        font-size: 15px;
+                        font-style: italic;
+                        font-weight: 500;
+                        color: nth($colores , 1 );
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,310 @@
+main {
+    .hero {
+        width: 100%;
+        height:calc(100vh - 180px);
+        background-image: url(../img/fondo2.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: local;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        h2 {
+            color: nth($colores, 2 );
+            text-align: center;
+            font-family: $fuente;
+            font-style: $estilo;
+            font-size: 70px;
+            font-weight: 400;
+            padding-top: 20px;
+            padding-right: 45px;
+        }
+    
+        div {
+            padding: 40px;
+            margin: 50px;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+    
+            p{
+                text-align: justify;
+            }
+            img {
+                margin-right: 50px;
+                margin-left: 50px;
+                width: 300px;
+                height: 300px;
+                border: solid #0e2430;
+            }
+        }
+    }
+    
+    .historias {
+        height: 800px;
+        width: 100%;
+        background: linear-gradient(76deg, rgba(14,36,48,1) 19%, rgba(252,58,81,1) 95%);
+        border: solid 20px;
+        border-color: nth($colores, 1 );
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    
+        h2 {
+            color: nth($colores, 2 );
+            text-align: center;
+            font-family:$fuente;
+            font-style: $estilo;
+            font-size: 40px;
+            font-weight: 400;
+            padding-top: 30px;
+        }
+    
+        .carrousel {
+            width: 66%;
+    
+            div {
+                div {
+                    div {
+                        img {
+                            width: 100%;
+                            height: 600px;
+    
+                        }
+                        div {
+                            a {
+                                text-decoration: none;
+                                color: nth($colores , 4 );
+                                font-size: 35px;
+                                transition-property: font-size;
+                                transition-duration: 0.25s;
+                                transition-timing-function: ease;
+                                &:hover {
+                                    font-size: 38px;
+                                }
+        
+                            }
+                            p {
+                                color: nth($colores, 4 );
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .autores {
+        background-color: nth($colores, 4 );
+        padding: 20px;
+    
+        h2 {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 40px;
+            font-weight: 300;
+            color: nth($colores, 1 );
+            text-align: center;
+            text-decoration: underline nth($colores, 1 );
+        }
+        
+        .tarjeta1 {
+            background-color: nth($colores, 2 );
+            margin: 10px;
+            padding: 20px;
+            display: grid;
+            grid-template-rows: repeat(3, 250px);
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            border: solid 3px nth($colores, 5 );
+            grid-column: 1 / span 3;
+            display: flex;
+    
+            img {
+                height: 100px;
+                width: 150px;
+                border: solid 2px #0e2430;
+            }
+            div {
+    
+                h3 {
+                    color: nth($colores, 4 );
+                    font-family: 'Courier New', Courier, monospace;
+                    font-style: $estilo;
+                    font-size: 20px;
+                }
+            }
+        }
+        .tarjeta2 {
+            background-color: nth($colores, 2 );
+            margin: 10px;
+            padding: 20px;
+            display: grid;
+            grid-template-rows: repeat(3, 250px);
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            border: solid 3px #e8d5b9;
+            grid-column: 1 / span 3;
+            display: flex;
+    
+            img {
+                height: 100px;
+                width: 150px;
+                border: solid 2px nth($colores, 1 );
+            }
+            div {
+                h3 {
+                    color: nth($colores, 4 );
+                    font-family: 'Courier New', Courier, monospace;
+                    font-style: $estilo;
+                    font-size: 20px;
+                }
+            }
+        }
+        .tarjeta3 {
+            background-color: nth($colores, 2 );
+            margin: 10px;
+            padding: 20px;
+            display: grid;
+            grid-template-rows: repeat(3, 250px);
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            border: solid 3px nth($colores, 5 );
+            grid-column: 1 / span 3;
+            display: flex;
+    
+            img {
+                height: 100px;
+                width: 150px;
+                border: solid 2px nth($colores, 1 );
+            }
+            div {
+                h3 {
+                    color: nth($colores, 4 );
+                    font-family: 'Courier New', Courier, monospace;
+                    font-style: $estilo;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    .cuentos {
+        background-color: nth($colores, 5 );
+        width: 100%;
+        padding: 30px;
+        border: solid 5px nth($colores, 2 );
+        font-family: $fuente;
+        color: nth($colores, 1 );
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        h2 {
+            text-align: center;
+            font-size: 100px;
+            font-style: $estilo;
+        }
+
+        img {
+            width: 75%;
+            height: 600px;
+            margin: 20px;
+            border: solid 2px nth($colores, 1 );
+        }
+
+        p {
+            font-size: 40px;
+            text-align: justify;
+        }
+
+        a {
+            color: nth($colores, 1 );
+            text-decoration: none;
+            font-size: 42px;
+            padding: 10px;
+            margin: 20px;
+            border: solid 2px nth($colores, 2 );
+            transition-property: font-size color;
+            transition-duration: 0.3s;
+            transition-timing-function: ease;
+            &:hover {
+                font-size: 45px;
+                color: nth($colores, 2 );
+            }
+
+        }
+
+        section {
+            border: solid 5px nth($colores, 2 );
+            padding: 30px;
+            margin: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+            h3 {
+                font-size: 75px;
+            }
+
+            h4 {
+                font-size: 60px;
+            }
+        }
+
+    }
+    
+    .formulario {
+        form { 
+            background-color: nth($colores, 5 ); 
+            font-family: $fuente;
+            text-align: center;
+            font-size: 25px;
+            font-style: $estilo;
+            font-weight: 500;
+            color: nth($colores, 1 );
+            padding: 30px;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 6fr;
+            grid-template-areas: 
+            "nombre"
+            "correo"
+            "genero"
+            "pais"
+            "opinion"
+            ;
+
+            div {
+                padding: 30px;
+                border: inset 5px nth($colores, 2 );
+                margin: 20px;
+            
+            }
+            .nombre {
+                grid-area: nombre;
+            }
+            .correo {
+                grid-area: correo;
+            }
+            .genero {
+                grid-area: genero;
+            }
+            .pais {
+                grid-area: pais;
+            }
+            .opinion {
+                grid-area: opinion;
+                
+                .botonesDeFormulario {
+                    border: none;
+                }
+            }
+        }
+    }
+}

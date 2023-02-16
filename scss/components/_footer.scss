@@ -1,0 +1,46 @@
+footer {
+    background-color: nth($colores, 2 );
+    padding: 40px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    .suscribirse {
+        background-color: nth($colores, 1 );
+        text-decoration: none;
+        color:nth($colores, 4 ) ;
+        font-size: 40px;
+        font-family:$fuente;
+        font-weight: 200;
+        font-style: $estilo;
+        border: solid nth($colores, 4 );
+        padding: 10px;
+        transition-property: font-size;
+        transition-duration: 0.3s;
+        transition-timing-function: ease;
+        &:hover {
+            font-size: 43px;
+        }
+    }
+
+    div {
+        width: 35%;
+        display: flex;
+        justify-content: space-around;
+
+        a{
+            img {
+                height: 75px;
+                width: 75px;
+                transition-property: width heigth;
+                transition-duration: 0.3s;
+                &:hover {
+                    height: 78px;
+                    width: 78px;
+                }
+            }
+        }
+    }
+}

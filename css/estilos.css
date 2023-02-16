@@ -1,0 +1,487 @@
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200;0,6..72,400;1,6..72,200;1,6..72,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+header {
+  background-color: #fc3a51;
+  padding: 30px; }
+  header h1 {
+    color: #f5b349;
+    text-align: center;
+    margin: 15px;
+    font-family: "Newsreader", serif;
+    font-weight: 400;
+    font-size: 40px;
+    font-style: italic; }
+  header nav div a {
+    font-family: "Newsreader", serif;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 500;
+    color: #0e2430; }
+  header nav div div div a {
+    font-family: 'Newsreader', serif;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 500;
+    color: #0e2430; }
+
+main .hero {
+  width: 100%;
+  height: calc(100vh - 180px);
+  background-image: url(../img/fondo2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: local;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  main .hero h2 {
+    color: #fc3a51;
+    text-align: center;
+    font-family: "Newsreader", serif;
+    font-style: italic;
+    font-size: 70px;
+    font-weight: 400;
+    padding-top: 20px;
+    padding-right: 45px; }
+  main .hero div {
+    padding: 40px;
+    margin: 50px;
+    width: 50%;
+    display: flex;
+    justify-content: center; }
+    main .hero div p {
+      text-align: justify; }
+    main .hero div img {
+      margin-right: 50px;
+      margin-left: 50px;
+      width: 300px;
+      height: 300px;
+      border: solid #0e2430; }
+
+main .historias {
+  height: 800px;
+  width: 100%;
+  background: linear-gradient(76deg, #0e2430 19%, #fc3a51 95%);
+  border: solid 20px;
+  border-color: #0e2430;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center; }
+  main .historias h2 {
+    color: #fc3a51;
+    text-align: center;
+    font-family: "Newsreader", serif;
+    font-style: italic;
+    font-size: 40px;
+    font-weight: 400;
+    padding-top: 30px; }
+  main .historias .carrousel {
+    width: 66%; }
+    main .historias .carrousel div div div img {
+      width: 100%;
+      height: 600px; }
+    main .historias .carrousel div div div div a {
+      text-decoration: none;
+      color: #e8d5b7;
+      font-size: 35px;
+      transition-property: font-size;
+      transition-duration: 0.25s;
+      transition-timing-function: ease; }
+      main .historias .carrousel div div div div a:hover {
+        font-size: 38px; }
+    main .historias .carrousel div div div div p {
+      color: #e8d5b7;
+      font-size: 20px; }
+
+main .autores {
+  background-color: #e8d5b7;
+  padding: 20px; }
+  main .autores h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    font-weight: 300;
+    color: #0e2430;
+    text-align: center;
+    text-decoration: underline #0e2430; }
+  main .autores .tarjeta1 {
+    background-color: #fc3a51;
+    margin: 10px;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: repeat(3, 250px);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    border: solid 3px #e8d5b9;
+    grid-column: 1 / span 3;
+    display: flex; }
+    main .autores .tarjeta1 img {
+      height: 100px;
+      width: 150px;
+      border: solid 2px #0e2430; }
+    main .autores .tarjeta1 div h3 {
+      color: #e8d5b7;
+      font-family: 'Courier New', Courier, monospace;
+      font-style: italic;
+      font-size: 20px; }
+  main .autores .tarjeta2 {
+    background-color: #fc3a51;
+    margin: 10px;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: repeat(3, 250px);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    border: solid 3px #e8d5b9;
+    grid-column: 1 / span 3;
+    display: flex; }
+    main .autores .tarjeta2 img {
+      height: 100px;
+      width: 150px;
+      border: solid 2px #0e2430; }
+    main .autores .tarjeta2 div h3 {
+      color: #e8d5b7;
+      font-family: 'Courier New', Courier, monospace;
+      font-style: italic;
+      font-size: 20px; }
+  main .autores .tarjeta3 {
+    background-color: #fc3a51;
+    margin: 10px;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: repeat(3, 250px);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    border: solid 3px #e8d5b9;
+    grid-column: 1 / span 3;
+    display: flex; }
+    main .autores .tarjeta3 img {
+      height: 100px;
+      width: 150px;
+      border: solid 2px #0e2430; }
+    main .autores .tarjeta3 div h3 {
+      color: #e8d5b7;
+      font-family: 'Courier New', Courier, monospace;
+      font-style: italic;
+      font-size: 20px; }
+
+main .cuentos {
+  background-color: #e8d5b9;
+  width: 100%;
+  padding: 30px;
+  border: solid 5px #fc3a51;
+  font-family: "Newsreader", serif;
+  color: #0e2430;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; }
+  main .cuentos h2 {
+    text-align: center;
+    font-size: 100px;
+    font-style: italic; }
+  main .cuentos img {
+    width: 75%;
+    height: 600px;
+    margin: 20px;
+    border: solid 2px #0e2430; }
+  main .cuentos p {
+    font-size: 40px;
+    text-align: justify; }
+  main .cuentos a {
+    color: #0e2430;
+    text-decoration: none;
+    font-size: 42px;
+    padding: 10px;
+    margin: 20px;
+    border: solid 2px #fc3a51;
+    transition-property: font-size color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease; }
+    main .cuentos a:hover {
+      font-size: 45px;
+      color: #fc3a51; }
+  main .cuentos section {
+    border: solid 5px #fc3a51;
+    padding: 30px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
+    main .cuentos section h3 {
+      font-size: 75px; }
+    main .cuentos section h4 {
+      font-size: 60px; }
+
+main .formulario form {
+  background-color: #e8d5b9;
+  font-family: "Newsreader", serif;
+  text-align: center;
+  font-size: 25px;
+  font-style: italic;
+  font-weight: 500;
+  color: #0e2430;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 6fr;
+  grid-template-areas: "nombre" "correo" "genero" "pais" "opinion"; }
+  main .formulario form div {
+    padding: 30px;
+    border: inset 5px #fc3a51;
+    margin: 20px; }
+  main .formulario form .nombre {
+    grid-area: nombre; }
+  main .formulario form .correo {
+    grid-area: correo; }
+  main .formulario form .genero {
+    grid-area: genero; }
+  main .formulario form .pais {
+    grid-area: pais; }
+  main .formulario form .opinion {
+    grid-area: opinion; }
+    main .formulario form .opinion .botonesDeFormulario {
+      border: none; }
+
+footer {
+  background-color: #fc3a51;
+  padding: 40px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; }
+  footer .suscribirse {
+    background-color: #0e2430;
+    text-decoration: none;
+    color: #e8d5b7;
+    font-size: 40px;
+    font-family: "Newsreader", serif;
+    font-weight: 200;
+    font-style: italic;
+    border: solid #e8d5b7;
+    padding: 10px;
+    transition-property: font-size;
+    transition-duration: 0.3s;
+    transition-timing-function: ease; }
+    footer .suscribirse:hover {
+      font-size: 43px; }
+  footer div {
+    width: 35%;
+    display: flex;
+    justify-content: space-around; }
+    footer div a img {
+      height: 75px;
+      width: 75px;
+      transition-property: width heigth;
+      transition-duration: 0.3s; }
+      footer div a img:hover {
+        height: 78px;
+        width: 78px; }
+
+@media screen and (max-width: 1325px) {
+  header {
+    padding: 10px; }
+    header h1 {
+      margin: 10px;
+      font-size: 30px; }
+  main .hero {
+    width: 100%;
+    height: calc(100vh - 180px);
+    background: linear-gradient(76deg, #e8d5b9 22%, #0e2430 85%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    main .hero h2 {
+      text-align: center;
+      font-family: 'Newsreader', serif;
+      font-style: italic;
+      font-size: 50px;
+      font-weight: 400;
+      padding-top: 45px;
+      padding-right: 45px; }
+    main .hero div {
+      padding: 30px;
+      margin: 20px;
+      width: 75%;
+      display: flex;
+      justify-content: center; }
+      main .hero div p {
+        text-align: justify; }
+      main .hero div img {
+        margin-right: 50px;
+        margin-left: 50px;
+        width: 250px;
+        height: 250px;
+        border: solid #0e2430; }
+  footer div {
+    width: 60%;
+    display: flex;
+    justify-content: space-around; } }
+
+@media screen and (max-width: 1000px) {
+  main .historias .carrousel {
+    width: 100%; }
+  main .cuentos {
+    padding: 20px; }
+    main .cuentos h2 {
+      font-size: 75px; }
+    main .cuentos p {
+      font-size: 25px; }
+    main .cuentos img {
+      width: 85%;
+      height: 500px;
+      margin: 5px; }
+    main .cuentos a {
+      font-size: 27px;
+      transition-property: font-size color;
+      transition-duration: 0.3s;
+      transition-timing-function: ease; }
+      main .cuentos a:hover {
+        font-size: 30px;
+        color: #fc3a51; }
+    main .cuentos section h3 {
+      font-size: 50px; }
+    main .cuentos section h4 {
+      font-size: 45px; } }
+
+@media screen and (max-width: 760px) {
+  main .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    main .hero h2 {
+      text-align: center;
+      font-family: 'Newsreader', serif;
+      font-style: italic;
+      font-size: 35px;
+      font-weight: 400;
+      padding-top: 25px;
+      padding-right: 45px; }
+    main .hero div {
+      padding: 10px;
+      margin: 10px;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+  main .historias {
+    height: auto; }
+    main .historias .carrousel {
+      width: 100%; }
+      main .historias .carrousel div div div img {
+        width: 100%;
+        height: 450px; }
+  main .autores div {
+    background-color: #fc3a51;
+    margin: 10px;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: repeat(3, 250px);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; }
+    main .autores div .tarjeta1 {
+      border: solid 3px #e8d5b9;
+      grid-column: 1 / span 2;
+      display: flex; }
+    main .autores div .tarjeta2 {
+      border: solid 3px #e8d5b9;
+      grid-column: 1 / span 2;
+      display: flex; }
+    main .autores div .tarjeta3 {
+      border: solid 3px #e8d5b9;
+      grid-column: 1 / span 2;
+      display: flex; }
+  main .cuentos {
+    padding: 15px; }
+    main .cuentos img {
+      width: 100%;
+      height: 300px;
+      margin: 0px; }
+    main .cuentos section {
+      margin: 5px;
+      padding: 5px;
+      justify-content: space-between; } }
+
+footer div {
+  width: 60%;
+  display: flex;
+  justify-content: space-around; }
+
+@media screen and (max-width: 615px) {
+  main .hero {
+    background: #0e2430; }
+    main .hero h2 {
+      text-align: center;
+      font-family: 'Newsreader', serif;
+      font-style: italic;
+      font-size: 35px;
+      font-weight: 400;
+      padding-top: 5px;
+      padding-right: 30px; }
+    main .hero div {
+      padding: 10px;
+      margin: 10px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      main .hero div img {
+        width: 200px;
+        height: 200px;
+        border: solid #0e2430; }
+      main .hero div p {
+        color: #fc3a51; }
+  main .autores div {
+    background-color: #fc3a51;
+    margin: 5px;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+    gap: 20px; }
+    main .autores div .tarjeta1 {
+      border: solid 3px #e8d5b9;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      main .autores div .tarjeta1 img {
+        height: 75px;
+        width: 100px;
+        border: solid 2px #0e2430; }
+    main .autores div .tarjeta2 {
+      border: solid 3px #e8d5b9;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      main .autores div .tarjeta2 img {
+        height: 75px;
+        width: 100px;
+        border: solid 2px #0e2430; }
+    main .autores div .tarjeta3 {
+      border: solid 3px #e8d5b9;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      main .autores div .tarjeta3 img {
+        height: 75px;
+        width: 100px;
+        border: solid 2px #0e2430; }
+  main .cuentos p {
+    font-size: 25px; }
+  /*---FORMULARIO---*/
+  .fromulario form {
+    padding: 5px; }
+    .fromulario form div {
+      padding: 5px;
+      margin: 5px; } }

@@ -1,0 +1,533 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200;0,6..72,400;1,6..72,200;1,6..72,400&display=swap');
+/*-----llamar fuente con: font-family: 'Newsreader', serif;-----*/
+/*-----paleta de colores: 
+.color1 girs crema { #e8d5b7 };
+.color2 negro { #0e2430 };
+.color3 rojo/rosa { #fc3a51 };
+.color4 amarillo/marrón { #f5b349 };
+.color5 gris crema claro { #e8d5b9 }; -----*/
+
+/*----RESET-----*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*------HEADER------*/
+
+body header {
+    background-color: #fc3a51;
+    padding: 30px;
+}
+
+h1{
+    color: #e8d5b9;
+    text-align: center;
+    margin: 15px;
+    font-family: 'Newsreader', serif;
+    font-weight: 400;
+    font-size: 40px;
+    font-style: italic;
+    
+}
+
+header nav a {
+    font-family: 'Newsreader', serif;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 500;
+    color: #0e2430;
+}
+
+/*-----MAIN-----*/
+
+.hero {
+    width: 100%;
+    height:calc(100vh - 180px);
+    background-image: url(../img/fondo2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: local;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero div {
+    padding: 40px;
+    margin: 50px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.hero h2 {
+    color: #fc3a51;
+    text-align: center;
+    font-family: 'Newsreader', serif;
+    font-style: italic;
+    font-size: 70px;
+    font-weight: 400;
+    padding-top: 20px;
+    padding-right: 45px;
+}
+
+.hero img {
+    margin-right: 50px;
+    margin-left: 50px;
+    width: 300px;
+    height: 300px;
+    border: solid #0e2430;
+}
+
+.hero p {
+    text-align: justify;
+
+}
+
+.historias {
+    height: 800px;
+    width: 100%;
+    background: linear-gradient(76deg, rgba(14,36,48,1) 19%, rgba(252,58,81,1) 95%);
+    border: solid 20px;
+    border-color: #0e2430;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.historias h2 {
+    color: #fc3a51;
+    text-align: center;
+    font-family:'Newsreader', serif;
+    font-style: italic;
+    font-size: 40px;
+    font-weight: 400;
+    padding-top: 30px;
+}
+
+
+.historias .carrousel {
+    width: 66%;
+}
+
+.carrousel a {
+    text-decoration: none;
+    color: #e8d5b7;
+    font-size: 35px;
+    transition-property: font-size;
+    transition-duration: 0.25s;
+    transition-timing-function: ease;
+}
+
+.carrousel a:hover{
+    font-size: 38px;
+}
+
+.carrousel p{
+    color: #e8d5b7;
+    font-size: 20px;
+}
+
+.historias div div img {
+    width: 100%;
+    height: 600px;
+}
+
+.autores {
+    background-color: #e8d5b7;
+    padding: 20px;
+}
+
+.autores h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    font-weight: 300;
+    color: #0e2430;
+    text-align: center;
+    text-decoration: underline #0e2430;
+}
+
+.autores div {
+    background-color: #fc3a51;
+    margin: 10px;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: repeat(3, 250px);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.autores div .tarjeta1 {
+    border: solid 3px #e8d5b9;
+    grid-column: 1 / span 3;
+    display: flex;
+}
+.autores div .tarjeta2 {
+    border: solid 3px #e8d5b9;
+    grid-column: 1 / span 3;
+    display: flex;
+}
+.autores div .tarjeta3 {
+    border: solid 3px #e8d5b9;
+    grid-column: 1 / span 3;
+    display: flex;
+}
+
+.autores div h3 {
+    color: #e8d5b7;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.autores div img {
+    height: 100px;
+    width: 150px;
+    border: solid 2px #0e2430;
+}
+
+/*-----FOOTER-----*/
+
+footer {
+    background-color: #fc3a51;
+    padding: 40px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer div {
+    width: 35%;
+    display: flex;
+    justify-content: space-around;
+}
+footer a img {
+    height: 75px;
+    width: 75px;
+    transition-property: width heigth;
+    transition-duration: 0.3s;
+}
+
+footer a img:hover{
+    height: 78px;
+    width: 78px;
+}
+
+footer .suscribirse {
+    background-color: #0e2430;
+    text-decoration: none;
+    color:#e8d5b7 ;
+    font-size: 40px;
+    font-family:'Newsreader', serif;
+    font-weight: 200;
+    font-style: italic;
+    border: solid #e8d5b7;
+    padding: 10px;
+    transition-property: font-size;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+.suscribirse:hover{
+    font-size: 43px;
+}
+
+
+/*----- FORMULARIO-----*/
+
+form{
+    background-color: #e8d5b9; 
+    font-family: 'Newsreader', serif;
+    text-align: center;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 500;
+    color: #0e2430;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 6fr;
+    grid-template-areas: 
+    "nombre"
+    "correo"
+    "genero"
+    "pais"
+    "opinion"
+    ;
+
+}
+
+form div {
+    padding: 30px;
+    border: inset 5px #fc3a51;
+    margin: 20px;
+}
+
+.nombre {
+    grid-area: nombre;
+}
+
+.correo {
+    grid-area: correo;
+}
+
+.contrasenia {
+    border: none;
+}
+
+.genero {
+    grid-area: genero;
+}
+
+.pais {
+    grid-area: pais;
+}
+
+.opinion {
+    grid-area: opinion;
+}
+
+.botonesDeFormulario {
+    border: none;
+}
+
+/*-----MEDIA QUERY------*/
+
+@media screen and (max-width: 1325px) {
+    
+    body header {
+        padding: 10px;
+    }
+
+    h1{
+        margin: 10px;
+        font-size: 30px;
+        
+    }
+
+    .hero {
+        width: 100%;
+        height:calc(100vh - 180px);
+        background: linear-gradient(76deg, rgba(232,213,185,1) 22%, rgba(14,36,48,1) 85%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero div {
+        padding: 30px;
+        margin: 20px;
+        width: 75%;
+        display: flex;
+        justify-content: center;
+    
+    }
+    
+    .hero h2 {
+        text-align: center;
+        font-family: 'Newsreader', serif;
+        font-style: italic;
+        font-size: 50px;
+        font-weight: 400;
+        padding-top: 45px;
+        padding-right: 45px;
+    }
+
+    .hero img {
+        margin-right: 50px;
+        margin-left: 50px;
+        width: 250px;
+        height: 250px;
+        border: solid #0e2430;
+    }
+    
+    .hero p {
+        text-align: justify;
+    
+    }
+    .hero h2 {
+        text-align: center;
+        font-family: 'Newsreader', serif;
+        font-style: italic;
+        font-size: 50px;
+        font-weight: 400;
+        padding-top: 45px;
+        padding-right: 45px;
+    }
+
+    footer div {
+        width: 60%;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .historias .carrousel {
+        width: 100%;
+    }    
+}
+
+@media screen and (max-width: 760px) {
+
+    .hero {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .hero div {
+        padding: 10px;
+        margin: 10px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .hero h2 {
+        text-align: center;
+        font-family: 'Newsreader', serif;
+        font-style: italic;
+        font-size: 35px;
+        font-weight: 400;
+        padding-top: 25px;
+        padding-right: 45px;
+    }
+
+    .historias {
+        height: auto;    }
+    
+    .historias .carrousel {
+        width: 100%;
+    }
+
+    .historias div div img {
+        width: 100%;
+        height: 450px;
+    }
+
+    .autores div {
+        background-color: #fc3a51;
+        margin: 10px;
+        padding: 20px;
+        display: grid;
+        grid-template-rows: repeat(3, 250px);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .autores div .tarjeta1 {
+        border: solid 3px #e8d5b9;
+        grid-column: 1 / span 2;
+        display: flex;
+    }
+    .autores div .tarjeta2 {
+        border: solid 3px #e8d5b9;
+        grid-column: 1 / span 2;
+        display: flex;
+    }
+    .autores div .tarjeta3 {
+        border: solid 3px #e8d5b9;
+        grid-column: 1 / span 2;
+        display: flex;
+    }
+
+footer div {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 615px) {
+    
+    .hero {
+        background: #0e2430;
+    }
+    .hero div {
+        padding: 10px;
+        margin: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .hero h2 {
+        text-align: center;
+        font-family: 'Newsreader', serif;
+        font-style: italic;
+        font-size: 35px;
+        font-weight: 400;
+        padding-top: 5px;
+        padding-right: 30px;
+    }
+    .hero img {
+        width: 200px;
+        height: 200px;
+        border: solid #0e2430;
+    }
+
+    .hero p {
+        color: #fc3a51;
+    }
+    .autores div {
+        background-color: #fc3a51;
+        margin: 5px;
+        padding: 10px;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .autores div .tarjeta1 {
+        border: solid 3px #e8d5b9;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .autores div .tarjeta2 {
+        border: solid 3px #e8d5b9;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .autores div .tarjeta3 {
+        border: solid 3px #e8d5b9;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .autores div img {
+        height: 75px;
+        width: 100px;
+        border: solid 2px #0e2430;
+    }
+
+    /*---FORMULARIO---*/
+    form{
+        padding: 5px;
+    }
+    
+    form div {
+        padding: 5px;
+        margin: 5px;
+    }
+    
+}
