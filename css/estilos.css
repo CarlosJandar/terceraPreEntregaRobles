@@ -8,7 +8,7 @@ header {
   background-color: #fc3a51;
   padding: 30px; }
   header h1 {
-    color: #f5b349;
+    color: #f4e6e6;
     text-align: center;
     margin: 15px;
     font-family: "Newsreader", serif;
@@ -89,7 +89,7 @@ main .historias {
       height: 600px; }
     main .historias .carrousel div div div div a {
       text-decoration: none;
-      color: #e8d5b7;
+      color: #f4e6e6;
       font-size: 35px;
       transition-property: font-size;
       transition-duration: 0.25s;
@@ -97,11 +97,11 @@ main .historias {
       main .historias .carrousel div div div div a:hover {
         font-size: 38px; }
     main .historias .carrousel div div div div p {
-      color: #e8d5b7;
+      color: #f4e6e6;
       font-size: 20px; }
 
 main .autores {
-  background-color: #e8d5b7;
+  background-color: #f4e6e6;
   padding: 20px; }
   main .autores h2 {
     font-family: 'Courier New', Courier, monospace;
@@ -118,7 +118,7 @@ main .autores {
     grid-template-rows: repeat(3, 250px);
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    border: solid 3px #e8d5b9;
+    border: solid 3px #f4e6e6;
     grid-column: 1 / span 3;
     display: flex; }
     main .autores .tarjeta1 img {
@@ -126,7 +126,7 @@ main .autores {
       width: 150px;
       border: solid 2px #0e2430; }
     main .autores .tarjeta1 div h3 {
-      color: #e8d5b7;
+      color: #f4e6e6;
       font-family: 'Courier New', Courier, monospace;
       font-style: italic;
       font-size: 20px; }
@@ -146,7 +146,7 @@ main .autores {
       width: 150px;
       border: solid 2px #0e2430; }
     main .autores .tarjeta2 div h3 {
-      color: #e8d5b7;
+      color: #f4e6e6;
       font-family: 'Courier New', Courier, monospace;
       font-style: italic;
       font-size: 20px; }
@@ -158,7 +158,7 @@ main .autores {
     grid-template-rows: repeat(3, 250px);
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    border: solid 3px #e8d5b9;
+    border: solid 3px #f4e6e6;
     grid-column: 1 / span 3;
     display: flex; }
     main .autores .tarjeta3 img {
@@ -166,13 +166,13 @@ main .autores {
       width: 150px;
       border: solid 2px #0e2430; }
     main .autores .tarjeta3 div h3 {
-      color: #e8d5b7;
+      color: #f4e6e6;
       font-family: 'Courier New', Courier, monospace;
       font-style: italic;
       font-size: 20px; }
 
 main .cuentos {
-  background-color: #e8d5b9;
+  background-color: #f4e6e6;
   width: 100%;
   padding: 30px;
   border: solid 5px #fc3a51;
@@ -221,7 +221,7 @@ main .cuentos {
       font-size: 60px; }
 
 main .formulario form {
-  background-color: #e8d5b9;
+  background-color: #f4e6e6;
   font-family: "Newsreader", serif;
   text-align: center;
   font-size: 25px;
@@ -261,12 +261,12 @@ footer {
   footer .suscribirse {
     background-color: #0e2430;
     text-decoration: none;
-    color: #e8d5b7;
+    color: #f4e6e6;
     font-size: 40px;
     font-family: "Newsreader", serif;
     font-weight: 200;
     font-style: italic;
-    border: solid #e8d5b7;
+    border: solid #f4e6e6;
     padding: 10px;
     transition-property: font-size;
     transition-duration: 0.3s;
